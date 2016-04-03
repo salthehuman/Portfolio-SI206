@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="static/style.css"/>
+</head>
+
+<div id="nav-wrapper">
+	<img src='static/Photos/logo.png' alt='logo'/>
+	<ul id="nav">
+		<li><a href = 'home.html'>HOME</a></li>	
+		<li><a href = 'photos.html'>PHOTOS</a></li>	
+		<li><a href = 'writing.html'>WRITING</a></li>	
+		<li><a href = 'bio.html'>BIO</a></li>	
+	</ul>
+</div>	
+
+
+<body>
+	<div id='content_sep'>
+	</div>
+	
+<header>
+	<div class='header'>
+	<h1> {{title}} <h1>
+	</div>
+</header>
+		{% block head %}
+
+		{% endblock %}
+
+    <div class='body'>	
+		{% block content %}
+		I should never see this content.  It should be replaced.
+		{% endblock %}
+	</div>
+	
+<footer>
+		<div id='clear_footer'>
+		</div>
+		<div id='footer'>
+			<h4>Copyright &copy; Salvatore DiGioia.</h4>
+		</div>
+</footer>
+</body>
+</html>
